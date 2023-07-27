@@ -1,6 +1,7 @@
 package application;
 
 import java.net.URL;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -13,12 +14,11 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
 public class SampleController implements Initializable {
-	
-	
 	
     @FXML
     private Button btnLogin;
@@ -28,9 +28,17 @@ public class SampleController implements Initializable {
 
     @FXML
     private TextField username;
+    
+    @FXML
+    private Label wrongMsg;
+    
+  
 
+
+    
 	    @FXML
 	    void login(ActionEvent event) {
+	    	Main m = new Main();
 //	    	JOptionPane.showMessageDialog(null, "Hii");
 	    	String name = username.getText();
 	    	String pass = password.getText();
@@ -65,11 +73,13 @@ public class SampleController implements Initializable {
 					}
 					
 						if(name.equals(dbName)  && pass.equals(dbPassword)) {
+							m.dashboardController("dashboard.fxml");
 							JOptionPane.showMessageDialog(null, "Logged in successfully");
 							
 						}
 						else {
-							JOptionPane.showMessageDialog(null, "Username or password is incorrect !");
+							wrongMsg.setText("Wrong username or password");
+//							JOptionPane.showMessageDialog(null, "Username or password is incorrect !");
 						}	
 					
 	    		}catch(Exception e) {
@@ -79,6 +89,9 @@ public class SampleController implements Initializable {
 	    	}
 	    	
 	    }
+	    
+	  
+	  
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {

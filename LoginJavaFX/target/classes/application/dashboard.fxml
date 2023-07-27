@@ -1,7 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-	
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
-	
-<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.dashboardController">
-	<!-- TODO Add Nodes -->
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.dashboardController">
+   <center>
+      <AnchorPane prefHeight="648.0" prefWidth="942.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox layoutX="-4.0" prefHeight="56.0" prefWidth="948.0" style="-fx-background-color: rgba(74, 3, 81, 1); -fx-padding: 6;">
+               <children>
+                  <Label contentDisplay="RIGHT" prefHeight="49.0" prefWidth="156.0" style="-fx-background-color: purple;" text="TMS" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Bodoni MT Bold Italic" size="28.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="-5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="45.0" right="10.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <ImageView fitHeight="42.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@profile%20image.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="630.0" top="2.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Button fx:id="btnLogout" mnemonicParsing="false" onAction="#logout" prefHeight="32.0" prefWidth="100.0" style="-fx-background-color: none; -fx-border-color: white; -fx-border-radius: 20;" text="Logout" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="7.0" top="7.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </HBox>
+            <VBox layoutY="55.0" prefHeight="595.0" prefWidth="158.0" style="-fx-background-color: rgba(72, 2, 79, 1);" />
+            <Label id="dashboard" layoutX="176.0" layoutY="73.0" text="Dashboard" textFill="PURPLE">
+               <font>
+                  <Font name="Times New Roman" size="22.0" />
+               </font>
+            </Label>
+         </children>
+         <BorderPane.margin>
+            <Insets left="-5.0" top="-5.0" />
+         </BorderPane.margin>
+      </AnchorPane>
+   </center>
 </BorderPane>
