@@ -1,15 +1,15 @@
 package application;
 
-import java.net.URL;
 
+import java.net.URL;
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ResourceBundle;
 
 import javax.swing.JOptionPane;
 
+import in.pandit.persistance.DatabaseConnection;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -25,54 +25,60 @@ public class SampleController implements Initializable {
 
     @FXML
     private PasswordField password;
-
-    @FXML
-    private TextField username;
     
     @FXML
     private Label wrongMsg;
     
+    @FXML
+    private TextField email;
+    
+    @FXML
+    private Button regBtn;
   
 
-
+    @FXML
+    void registerPage(ActionEvent event) {
+    	Main main = new Main();
+    	try {
+    		main.registerPageController("signUp.fxml");
+    	}catch(Exception e) {
+    		System.out.println(e);
+    	}
+    }
+   
     
 	    @FXML
 	    void login(ActionEvent event) {
 	    	Main m = new Main();
 //	    	JOptionPane.showMessageDialog(null, "Hii");
-	    	String name = username.getText();
+	    	String emailId = email.getText();
 	    	String pass = password.getText();
 	    	
 
 	    	
-	    	String dbName = "heera";
-	    	String dbPassword = "123";
+	    	String dbEmail = null;
+	    	String dbPassword = null;
 	    	
 	    	
-	    	if(name.equals("") || pass.equals("")) {
+	    	if(emailId.equals("") || pass.equals("")) {
 	    		JOptionPane.showMessageDialog(null, "Username or password cannot blank");
 	    	}
 	    	else {
 	    		
 	    		try {
 	    			
-	    			String url = "jdbc:postgresql://localhost:5432/TMS";
-					String user = "postgres";
-					String password = "admin";
-					Class.forName("org.postgresql.Driver");
-					Connection conn = DriverManager.getConnection(url, user, password);
-					if (conn != null) {
-						System.out.println("Database connected successfully");
-					}
-	    			PreparedStatement ps = conn.prepareStatement("select username, password from login");
+					Connection conn = DatabaseConnection.getConnection();
+					
+	    			PreparedStatement ps = conn.prepareStatement("select email, password from users where email = ?");
+	    			ps.setString(1, emailId);
 	    			ResultSet rs = ps.executeQuery();
 					
 					while(rs.next()) {
-						dbName = rs.getString(1);
+						dbEmail = rs.getString(1);
 						dbPassword = rs.getString(2);
 					}
 					
-						if(name.equals(dbName)  && pass.equals(dbPassword)) {
+						if(emailId.equals(dbEmail)  && pass.equals(dbPassword)) {
 							m.dashboardController("dashboard.fxml");
 							JOptionPane.showMessageDialog(null, "Logged in successfully");
 							

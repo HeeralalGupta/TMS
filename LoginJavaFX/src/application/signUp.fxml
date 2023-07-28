@@ -1,8 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<BorderPane xmlns:fx="http://javafx.com/fxml/1">
-	<!-- TODO Add Nodes -->
+<BorderPane xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.registerController">
+   <center>
+      <AnchorPane prefHeight="520.0" prefWidth="520.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="520.0" prefWidth="133.0" style="-fx-background-color: purple;" />
+            <Label layoutX="162.0" layoutY="39.0" text="Sign Up" textFill="PURPLE">
+               <font>
+                  <Font name="Times New Roman Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="164.0" layoutY="106.0" text="Username">
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="163.0" layoutY="174.0" text="Eamil">
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="163.0" layoutY="249.0" text="Mobile">
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="163.0" layoutY="318.0" text="Password">
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="name" layoutX="163.0" layoutY="129.0" prefHeight="34.0" prefWidth="299.0" promptText="Enter username">
+               <font>
+                  <Font size="15.0" />
+               </font></TextField>
+            <TextField fx:id="email" layoutX="163.0" layoutY="197.0" prefHeight="34.0" prefWidth="299.0" promptText="Enter email">
+               <font>
+                  <Font size="15.0" />
+               </font></TextField>
+            <TextField fx:id="mobile" layoutX="164.0" layoutY="272.0" prefHeight="34.0" prefWidth="299.0" promptText="Enter mobile">
+               <font>
+                  <Font size="15.0" />
+               </font></TextField>
+            <PasswordField fx:id="password" layoutX="163.0" layoutY="341.0" prefHeight="34.0" prefWidth="299.0" promptText="Enter password">
+               <font>
+                  <Font size="15.0" />
+               </font></PasswordField>
+            <Button fx:id="registerBtn" layoutX="165.0" layoutY="389.0" mnemonicParsing="false" onAction="#register" prefHeight="34.0" prefWidth="296.0" style="-fx-background-color: transparent; -fx-border-radius: 10; -fx-background-radius: 10; -fx-border-width: 1; -fx-border-color: purple;" text="Register" textFill="PURPLE">
+               <font>
+                  <Font name="Comic Sans MS Italic" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="backLogin" layoutX="164.0" layoutY="436.0" mnemonicParsing="false" onAction="#backToLogin" prefHeight="34.0" prefWidth="296.0" style="-fx-background-color: transparent; -fx-border-radius: 10; -fx-background-radius: 10; -fx-border-width: 1; -fx-border-color: purple;" text="Back to Login" textFill="PURPLE">
+               <font>
+                  <Font name="Comic Sans MS Italic" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
 </BorderPane>
-

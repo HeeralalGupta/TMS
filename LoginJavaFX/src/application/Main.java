@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
@@ -24,6 +25,17 @@ public class Main extends Application {
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
+	}
+	public void registerPageController(String fxml) throws Exception{
+		Parent  pane = FXMLLoader.load(getClass().getResource(fxml));
+		Scene scene = new Scene(pane,512,510);
+		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		stg.getIcons().add(new Image("C:\\Users\\Heera\\eclipse-workspace\\LoginJavaFX\\src\\image\\xyz.jfif"));
+		stg.setTitle("Register");
+		stg.setScene(scene);
+		stg.setResizable(false);
+		stg.show();
+		
 	}
 	public void dashboardController(String fxml) throws Exception{
 		Parent  pane = FXMLLoader.load(getClass().getResource(fxml));
