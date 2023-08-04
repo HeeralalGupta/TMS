@@ -1,4 +1,4 @@
-package in.pandit.persistance;
+package application.persistance;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

@@ -1,5 +1,8 @@
 /* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
--fx-registerIcon{
-	-fx-color: blue;
-	-fx-background-color: green;
+
+#btnEmployeeLIst:hover{
+	-fx-background-color: #FFFFFF;
+}
+#btnEmployeeLIst:pressed{
+	-fx-background-color: #FFFFFF;
 }

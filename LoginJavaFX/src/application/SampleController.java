@@ -9,7 +9,7 @@ import java.util.ResourceBundle;
 
 import javax.swing.JOptionPane;
 
-import in.pandit.persistance.DatabaseConnection;
+import application.persistance.DatabaseConnection;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -79,13 +79,12 @@ public class SampleController implements Initializable {
 					}
 					
 						if(emailId.equals(dbEmail)  && pass.equals(dbPassword)) {
-							m.dashboardController("dashboard.fxml");
+							m.dashboardHandle("dashboard.fxml");
 							JOptionPane.showMessageDialog(null, "Logged in successfully");
 							
 						}
 						else {
 							wrongMsg.setText("Wrong username or password");
-//							JOptionPane.showMessageDialog(null, "Username or password is incorrect !");
 						}	
 					
 	    		}catch(Exception e) {

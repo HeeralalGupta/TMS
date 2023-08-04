@@ -17,7 +17,7 @@ public class Main extends Application {
 			stg = primaryStage;
 			BorderPane root = (BorderPane)FXMLLoader.load(getClass().getResource("Sample.fxml"));
 			Scene scene = new Scene(root,500,400);
-			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+			stg.getIcons().add(new Image("C:\\Users\\Heera\\eclipse-workspace\\LoginJavaFX\\src\\image\\xyz.jfif"));
 			primaryStage.setTitle("Login Page");
 			primaryStage.setScene(scene);
 			primaryStage.setResizable(false);
@@ -29,30 +29,32 @@ public class Main extends Application {
 	public void registerPageController(String fxml) throws Exception{
 		Parent  pane = FXMLLoader.load(getClass().getResource(fxml));
 		Scene scene = new Scene(pane,512,510);
-		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 		stg.getIcons().add(new Image("C:\\Users\\Heera\\eclipse-workspace\\LoginJavaFX\\src\\image\\xyz.jfif"));
 		stg.setTitle("Register");
 		stg.setScene(scene);
 		stg.setResizable(false);
 		stg.show();
-		
+	
 	}
-	public void dashboardController(String fxml) throws Exception{
-		Parent  pane = FXMLLoader.load(getClass().getResource(fxml));
-		Scene scene = new Scene(pane,942,648);
+	public void dashboardHandle(String fxml) throws Exception{
+		Parent  pane = FXMLLoader.load(getClass().getResource("dashboard.fxml"));
+		Scene scene = new Scene(pane,910, 400);
 		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		stg.getIcons().add(new Image("C:\\Users\\Heera\\eclipse-workspace\\LoginJavaFX\\src\\image\\xyz.jfif"));
 		stg.setTitle("Dashboard");
 		stg.setScene(scene);
-		stg.setResizable(false);
+		stg.setResizable(true);
 		stg.show();
 		
 	}
+	
 	
 	public void logoutAction(String fxml) throws Exception{
 		Parent  pane = FXMLLoader.load(getClass().getResource(fxml));
 		Scene scene = new Scene(pane,500,400);
 		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
-		stg.setTitle("Dashboard");
+		stg.getIcons().add(new Image("C:\\Users\\Heera\\eclipse-workspace\\LoginJavaFX\\src\\image\\xyz.jfif"));
+		stg.setTitle("Login");
 		stg.setScene(scene);
 		stg.setResizable(false);
 		stg.show();

@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 
 import javax.swing.JOptionPane;
 
-import in.pandit.persistance.DatabaseConnection;
+import application.persistance.DatabaseConnection;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
