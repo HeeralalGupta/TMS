@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BubbleChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="710.0" prefWidth="1240.0" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.dashboardController">
+   <center>
+      <AnchorPane id="ap1" fx:id="ap1" prefHeight="648.0" prefWidth="942.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutY="152.0" prefHeight="496.0" prefWidth="248.0" style="-fx-background-color: #008B76;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="152.0" />
+            <VBox layoutX="5.0" layoutY="152.0" prefHeight="496.0" prefWidth="62.0" style="-fx-background-color: #55A38B;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="152.0">
+               <effect>
+                  <DropShadow height="0.0" radius="6.9725" width="29.89" />
+               </effect>
+            </VBox>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutY="4.0" prefHeight="143.0" prefWidth="248.0" style="-fx-background-color: #006465; -fx-border-color: #47bc99;" textFill="WHITE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="btnDashboard" graphicTextGap="30.0" layoutX="6.0" layoutY="175.0" onMouseClicked="#btnDashboard" prefHeight="50.0" prefWidth="242.0" styleClass="sidebarItem" text="Dashboard" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <padding>
+                  <Insets left="14.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image/dashboard.png" />
+                     </image></ImageView>
+               </graphic>
+            </Label>
+            <Label fx:id="btnAllTasks" graphicTextGap="30.0" layoutX="6.0" layoutY="231.0" onMouseClicked="#btnAllTasks" prefHeight="50.0" prefWidth="242.0" styleClass="sidebarItem" text="All Tasks" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <padding>
+                  <Insets left="14.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image/lasss.png" />
+                     </image></ImageView>
+               </graphic>
+            </Label>
+            <Label fx:id="btnEmployeeLIst" graphicTextGap="30.0" layoutX="6.0" layoutY="287.0" onMouseClicked="#btnEmployeeLIst" prefHeight="50.0" prefWidth="242.0" styleClass="sidebarItem" text="Employee List" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <padding>
+                  <Insets left="14.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image/emp-list.png" />
+                     </image></ImageView>
+               </graphic>
+            </Label>
+            <Label fx:id="btnMyTasks" graphicTextGap="30.0" layoutX="6.0" layoutY="343.0" onMouseClicked="#btnMyTasks" prefHeight="50.0" prefWidth="242.0" styleClass="sidebarItem" text="Add Tasks" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <padding>
+                  <Insets left="14.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image/taskss.png" />
+                     </image></ImageView>
+               </graphic>
+            </Label>
+            <Label fx:id="btnAssignedTasks" graphicTextGap="30.0" layoutX="6.0" layoutY="400.0" onMouseClicked="#btnAssignedTasks" prefHeight="50.0" prefWidth="242.0" styleClass="sidebarItem" text="Assigned Tasks" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <padding>
+                  <Insets left="14.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image/atask.png" />
+                     </image></ImageView>
+               </graphic>
+            </Label>
+            <BorderPane fx:id="bp" layoutX="248.0" layoutY="152.0" prefHeight="496.0" prefWidth="694.0" style="-fx-background-color: #C5DDD6;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="248.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="152.0">
+               <center>
+                  <AnchorPane fx:id="ap" prefHeight="496.0" prefWidth="900.0" style="-fx-background-color: #C5DDD6;" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox alignment="CENTER" layoutX="6.0" layoutY="24.0" prefHeight="112.0" prefWidth="991.0" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="0.0">
+                           <children>
+                              <Pane prefHeight="107.0" prefWidth="230.0" style="-fx-background-color: #A0C8C3; -fx-border-radius: 10; -fx-background-radius: 5;" styleClass="box">
+                                 <HBox.margin>
+                                    <Insets right="20.0" />
+                                 </HBox.margin>
+                                 <effect>
+                                    <DropShadow height="35.83" radius="15.19" width="26.93" />
+                                 </effect>
+                                 <children>
+                                    <Label layoutX="22.0" layoutY="13.0" text="10">
+                                       <font>
+                                          <Font size="36.0" />
+                                       </font></Label>
+                                    <Label layoutX="22.0" layoutY="72.0" text="All Tasks">
+                                       <font>
+                                          <Font name="Arial" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="55.0" fitWidth="60.0" layoutX="154.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../image/task2-logo.png" />
+                                       </image></ImageView>
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="107.0" prefWidth="230.0" style="-fx-background-color: #A0C8C3; -fx-border-radius: 10; -fx-background-radius: 5;" styleClass="box">
+                                 <HBox.margin>
+                                    <Insets right="20.0" />
+                                 </HBox.margin>
+                                 <effect>
+                                    <DropShadow height="35.83" radius="15.19" width="26.93" />
+                                 </effect>
+                                 <children>
+                                    <Label layoutX="22.0" layoutY="12.0" text="05">
+                                       <font>
+                                          <Font size="36.0" />
+                                       </font></Label>
+                                    <Label layoutX="22.0" layoutY="70.0" text="Pending Tasks">
+                                       <font>
+                                          <Font name="Arial" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="55.0" fitWidth="60.0" layoutX="154.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../image/pending-tasks.png" />
+                                       </image></ImageView>
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="107.0" prefWidth="230.0" style="-fx-background-color: #A0C8C3; -fx-border-radius: 10; -fx-background-radius: 5;" styleClass="box">
+                                 <HBox.margin>
+                                    <Insets right="20.0" />
+                                 </HBox.margin>
+                                 <effect>
+                                    <DropShadow height="35.83" radius="15.19" width="26.93" />
+                                 </effect>
+                                 <children>
+                                    <Label layoutX="29.0" layoutY="12.0" text="03">
+                                       <font>
+                                          <Font size="36.0" />
+                                       </font></Label>
+                                    <Label layoutX="27.0" layoutY="68.0" text="Progress Tasks">
+                                       <font>
+                                          <Font name="Arial" size="14.0" />
+                                       </font></Label>
+                                    <ImageView fitHeight="55.0" fitWidth="60.0" layoutX="157.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../image/progress-tasks.png" />
+                                       </image></ImageView>
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="107.0" prefWidth="230.0" style="-fx-background-color: #A0C8C3; -fx-border-radius: 10; -fx-background-radius: 5;" styleClass="box">
+                                 <HBox.margin>
+                                    <Insets right="20.0" />
+                                 </HBox.margin>
+                                 <effect>
+                                    <DropShadow height="35.83" radius="15.19" width="26.93" />
+                                 </effect>
+                                 <children>
+                                    <Label layoutX="25.0" layoutY="10.0" text="02">
+                                       <font>
+                                          <Font size="36.0" />
+                                       </font></Label>
+                                    <Label layoutX="25.0" layoutY="68.0" text="Completed">
+                                       <font>
+                                          <Font name="Arial" size="14.0" />
+                                       </font></Label>
+                                    <ImageView fitHeight="55.0" fitWidth="60.0" layoutX="153.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../image/complete-tasks.png" />
+                                       </image></ImageView>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutY="152.0" prefHeight="363.0" prefWidth="997.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <children>
+                              <BubbleChart legendSide="TOP" prefHeight="369.0" prefWidth="830.0">
+                                <xAxis>
+                                  <NumberAxis side="BOTTOM" />
+                                </xAxis>
+                                <yAxis>
+                                  <NumberAxis side="LEFT" />
+                                </yAxis>
+                                 <padding>
+                                    <Insets top="20.0" />
+                                 </padding>
+                              </BubbleChart>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="1.0" layoutY="510.0" prefHeight="47.0" prefWidth="226.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="0.0">
+                           <children>
+                              <Label text="Copyright © 2023 TMS. All rights reserved. Application developed by panditsoft.in">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+            <ImageView fitHeight="18.0" fitWidth="13.0" layoutX="54.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="261.0" layoutY="25.0" prefHeight="20.0" prefWidth="354.0" text="Welcome to Task Management System">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <HBox fx:id="headerStatus1" alignment="CENTER_RIGHT" layoutX="247.0" layoutY="67.0" prefHeight="80.0" prefWidth="999.0" style="-fx-background-color: #47bc99;" AnchorPane.leftAnchor="247.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <VBox prefHeight="80.0" prefWidth="1200.0">
+                     <children>
+                        <Label fx:id="dirStatus" text="/home/dashboard" textFill="#fffefe">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="10.0" top="16.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="headingStatus" text="Dashboard" textFill="#fffefe">
+                           <font>
+                              <Font name="Times New Roman" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <Label fx:id="icon">
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="13.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../image/down-arrows.png" />
+                           </image>
+                           <effect>
+                              <DropShadow />
+                           </effect></ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ImageView fitHeight="42.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image/profile%20image.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="65.0" />
+                     </HBox.margin>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+               </children>
+            </HBox>
+            <ImageView fitHeight="18.0" fitWidth="13.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="135.0" fitWidth="145.0" layoutX="51.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/tms-logo-new.png" />
+               </image>
+               <effect>
+                  <Bloom />
+               </effect></ImageView>
+         </children>
+         <BorderPane.margin>
+            <Insets left="-5.0" top="-5.0" />
+         </BorderPane.margin>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,15 @@
+//EMPLOYEE TABLE
+
+create table employee(id int,name varchar(60),
+designation varchar(50),email varchar(50),mobile varchar(20));
+
+//Task TABLE
+
+create table tasks(id varchar(50) not null,taskName varchar(50),
+assignDate date,estimatedDate date,
+priority varchar(15),status varchar(40),
+assignTo varchar(50),assignId int,
+owner varchar(50),currentOwner varchar(40),
+description varchar(500));
+
+

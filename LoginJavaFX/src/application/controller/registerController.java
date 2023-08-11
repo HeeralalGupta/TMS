@@ -1,4 +1,4 @@
-package application;
+package application.controller;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -6,6 +6,7 @@ import java.sql.ResultSet;
 
 import javax.swing.JOptionPane;
 
+import application.Main;
 import application.persistance.DatabaseConnection;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -38,7 +39,7 @@ public class registerController {
     	try {
     	Main main = new Main();
 //    	main.dashboardController("Sample.fxml");
-    	main.logoutAction("Sample.fxml");
+    	main.logoutAction("/application/fxml/Sample.fxml");
     	}catch(Exception e) {
     		System.out.println(e);
     	}
@@ -74,7 +75,7 @@ public class registerController {
  			int status = stmt.executeUpdate();
  		if(status > 0) {
  			Main main = new Main();
-	    	main.logoutAction("Sample.fxml");
+	    	main.logoutAction("/application/fxml/Sample.fxml");
 	    	JOptionPane.showMessageDialog(null, "Registerd successfully");
  		}
  		else {

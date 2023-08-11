@@ -1,4 +1,4 @@
-package application;
+package application.controller;
 
 
 import java.net.URL;
@@ -9,6 +9,7 @@ import java.util.ResourceBundle;
 
 import javax.swing.JOptionPane;
 
+import application.Main;
 import application.persistance.DatabaseConnection;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -40,7 +41,7 @@ public class SampleController implements Initializable {
     void registerPage(ActionEvent event) {
     	Main main = new Main();
     	try {
-    		main.registerPageController("signUp.fxml");
+    		main.registerPageController("/application/fxml/signUp.fxml");
     	}catch(Exception e) {
     		System.out.println(e);
     	}
@@ -79,7 +80,7 @@ public class SampleController implements Initializable {
 					}
 					
 						if(emailId.equals(dbEmail)  && pass.equals(dbPassword)) {
-							m.dashboardHandle("dashboard.fxml");
+							m.dashboardHandle(dbEmail);
 							JOptionPane.showMessageDialog(null, "Logged in successfully");
 							
 						}
