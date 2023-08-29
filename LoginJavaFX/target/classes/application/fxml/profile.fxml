@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER" prefHeight="587.0" prefWidth="910.0" style="-fx-background-color: #F6F3EE;" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.ProfileController">
+   <children>
+      <AnchorPane prefHeight="527.0" prefWidth="915.0" style="-fx-background-color: #A0C8C3; -fx-background-radius: 10;">
+         <HBox.margin>
+            <Insets bottom="30.0" top="30.0" />
+         </HBox.margin>
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Pane layoutX="-1.0" prefHeight="105.0" prefWidth="910.0" style="-fx-background-color: #00A8AA; -fx-background-radius: 10px 10px 0.0px 0.0px;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <Pane layoutY="111.0" prefHeight="7.0" prefWidth="200.0" style="-fx-background-color: #F6F3EE;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+            <Circle fill="#f6f3ee" layoutX="466.0" layoutY="126.0" radius="87.0" stroke="#f6f3ee" strokeType="INSIDE" />
+            <ImageView fx:id="imageView" fitHeight="161.0" fitWidth="164.0" layoutX="386.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/profile.png" />
+               </image></ImageView>
+            <Label fx:id="icon2" contentDisplay="TOP" layoutX="409.0" layoutY="69.0" opacity="0.0" prefHeight="115.0" prefWidth="115.0" style="-fx-background-radius: 100;" styleClass="image-hover-container" text="Change Photo" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image/camera.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label fx:id="icon" alignment="CENTER" layoutX="558.0" layoutY="123.0" prefHeight="30.0" prefWidth="30.0" style="-fx-background-radius: 100;" styleClass="profile">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image/pencile.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label layoutX="256.0" layoutY="244.0" prefHeight="39.0" prefWidth="215.0" text="User Name             :" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="256.0" layoutY="294.0" prefHeight="39.0" prefWidth="215.0" text="User Email Id          :" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="256.0" layoutY="344.0" prefHeight="39.0" prefWidth="215.0" text="Mobile No.             :" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="name" layoutX="545.0" layoutY="244.0" prefHeight="39.0" prefWidth="300.0" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="email" layoutX="545.0" layoutY="294.0" prefHeight="39.0" prefWidth="300.0" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="mobile" layoutX="545.0" layoutY="344.0" prefHeight="39.0" prefWidth="300.0" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="103.0" layoutY="127.0" prefHeight="39.0" prefWidth="37.0" text="ID  :" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="id" layoutX="142.0" layoutY="127.0" prefHeight="39.0" prefWidth="106.0" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="399.0" layoutY="423.0" mnemonicParsing="false" onAction="#updateBtn" prefHeight="39.0" prefWidth="134.0" style="-fx-background-radius: 50; -fx-border-radius: 50;" styleClass="save" text="Update">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="339.0" layoutY="123.0" onMouseClicked="#reload" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/ref.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

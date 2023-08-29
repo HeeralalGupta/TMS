@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="821.0" style="-fx-background-color: #00A8AA;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.ViewAssignTaskController">
+   <children>
+      <Pane prefHeight="570.0" prefWidth="822.0" style="-fx-background-color: #A0C8C3; -fx-background-radius: 10;">
+         <HBox.margin>
+            <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+         </HBox.margin>
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Label layoutX="62.0" layoutY="89.0" prefHeight="25.0" prefWidth="101.0" text="Task Name :" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="taskNameLabel" alignment="CENTER" layoutX="55.0" layoutY="117.0" prefHeight="41.0" prefWidth="293.0" style="-fx-background-color: #00A8AA; -fx-background-radius: 10;" text="Label" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="62.0" layoutY="169.0" prefHeight="25.0" prefWidth="101.0" text="Estimated Date :" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="estimateDateLabel" alignment="CENTER" layoutX="55.0" layoutY="197.0" prefHeight="41.0" prefWidth="293.0" style="-fx-background-color: #00A8AA; -fx-background-radius: 10;" text="Label" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="62.0" layoutY="248.0" prefHeight="25.0" prefWidth="101.0" text="Assigned Date :" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="assignDateLabel" alignment="CENTER" layoutX="55.0" layoutY="276.0" prefHeight="41.0" prefWidth="293.0" style="-fx-background-color: #00A8AA; -fx-background-radius: 10;" text="Label" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="62.0" layoutY="329.0" prefHeight="25.0" prefWidth="101.0" text="Status :" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="statusLabel" alignment="CENTER" layoutX="55.0" layoutY="357.0" prefHeight="41.0" prefWidth="293.0" style="-fx-background-color: #00A8AA; -fx-background-radius: 10;" text="Label" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="62.0" layoutY="408.0" prefHeight="15.0" prefWidth="101.0" text="Description :" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="418.0" layoutY="88.0" prefHeight="25.0" prefWidth="101.0" text="Assign To :" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="assignToLabel" alignment="CENTER" layoutX="411.0" layoutY="116.0" prefHeight="41.0" prefWidth="293.0" style="-fx-background-color: #00A8AA; -fx-background-radius: 10;" text="Label" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="418.0" layoutY="168.0" prefHeight="25.0" prefWidth="101.0" text="Assign ID :" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="assignIdLabel" alignment="CENTER" layoutX="411.0" layoutY="196.0" prefHeight="41.0" prefWidth="293.0" style="-fx-background-color: #00A8AA; -fx-background-radius: 10;" text="Label" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="418.0" layoutY="247.0" prefHeight="25.0" prefWidth="101.0" text="Owner :" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="ownerLabel" alignment="CENTER" layoutX="411.0" layoutY="275.0" prefHeight="41.0" prefWidth="293.0" style="-fx-background-color: #00A8AA; -fx-background-radius: 10;" text="Label" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="418.0" layoutY="328.0" prefHeight="25.0" prefWidth="101.0" text="Current Owner :" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="currentOwnerLabel" alignment="CENTER" layoutX="411.0" layoutY="356.0" prefHeight="41.0" prefWidth="293.0" style="-fx-background-color: #00A8AA; -fx-background-radius: 10;" text="Label" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="418.0" layoutY="9.0" prefHeight="25.0" prefWidth="101.0" text="Priority :" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="priorityLabel" alignment="CENTER" layoutX="411.0" layoutY="37.0" prefHeight="41.0" prefWidth="293.0" style="-fx-background-color: #00A8AA; -fx-background-radius: 10;" text="Label" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="descriptionLabel" layoutX="55.0" layoutY="429.0" prefHeight="72.0" prefWidth="651.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextArea>
+            <Label fx:id="idLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="55.0" layoutY="37.0" prefHeight="41.0" prefWidth="293.0" style="-fx-background-color: #00A8AA; -fx-background-radius: 10;" text="Label" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children></Pane>
+   </children>
+</HBox>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="hbox" alignment="CENTER" prefHeight="562.0" prefWidth="945.0" style="-fx-background-color: #F6F3EE;" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.AllTaskController">
+   <children>
+      <Pane fx:id="pane" prefHeight="539.0" prefWidth="943.0">
+         <children>
+            <Pane layoutX="7.0" layoutY="16.0" prefHeight="469.0" prefWidth="927.0" style="-fx-background-color: #00A8AA;">
+               <children>
+                  <TableView fx:id="tableView" layoutX="8.0" layoutY="64.0" prefHeight="395.0" prefWidth="911.0">
+                    <columns>
+                      <TableColumn fx:id="idColumn" text="Id" />
+                        <TableColumn fx:id="taskNameColumn" text="Task Name" />
+                        <TableColumn fx:id="estimateColumn" text="Estimate Date" />
+                        <TableColumn fx:id="statusColumn" text="Status" />
+                        <TableColumn fx:id="assignToColumn" text="Assign To" />
+                        <TableColumn fx:id="currentOwnerColumn" text="Current Owner" />
+                        <TableColumn fx:id="actionColumn" prefWidth="100.0" text="Action" />
+                    </columns>
+                  </TableView>
+                  <TextField fx:id="searchBar" layoutX="613.0" layoutY="29.0" prefHeight="25.0" prefWidth="268.0" promptText="Search Task Name" />
+                  <Label alignment="CENTER" layoutX="885.0" layoutY="29.0" onMouseClicked="#search" prefHeight="25.0" prefWidth="30.0" style="-fx-background-radius: 5px 0.0px 5px 0.0px;" styleClass="search">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../image/search.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="30.0" text="ALL TASKS" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="26.0" fitWidth="41.0" layoutX="582.0" layoutY="29.0" onMouseClicked="#reload" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image/ref.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <ImageView fitHeight="30.0" fitWidth="43.0" layoutX="437.0" layoutY="492.0" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#preBtn" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/PRE.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="43.0" layoutX="477.0" layoutY="492.0" onMouseClicked="#nextBtn" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/PRE.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="262.0" layoutY="531.0" text="Copyright © 2023 TMS. All rights reserved. Application developed by panditsoft.in" />
+         </children></Pane>
+   </children>
+</HBox>

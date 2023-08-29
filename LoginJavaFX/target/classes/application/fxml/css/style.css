@@ -1,0 +1,100 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.sidebarItem:hover
+{
+	-fx-background-color:  #F6F3EE;
+	-fx-border-color:  #05d1c4;
+	-fx-border-width: 0.0px 0.0px 0.0px 3px;
+	-fx-text-fill:  #008B76;  
+}
+.box:hover
+{
+
+	-fx-border-color: white;
+	-fx-border-width: 0.0px 0.0px 5px 0.0px;  
+}
+.save:hover
+{
+	 -fx-background-color: #28e0dd;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+.save
+{
+	 -fx-border-color: linear-gradient(from 30% 10% to 50% 100%, #FF0000, #00FF00);
+	 -fx-background-color:  #05d1c4;
+  
+}
+
+/* styles.css */
+.table-view {
+    -fx-background-color: lightgrey;
+}
+
+.column-header {
+    -fx-background-color: White;
+    -fx-text-fill: Black;
+}
+
+.table-cell {
+    -fx-text-fill: black;
+}
+
+.table-row-cell:odd{
+    -fx-background-color: lightgrey;
+    
+}
+.table-row-cell:even {
+    -fx-background-color: darkgrey;
+}
+/* styles.css */
+.table-row-cell:selected {
+    -fx-background-color: #28e0dd;
+}
+
+.image-view:hover {
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.9), 15, 0, 0, 0);
+}
+.search:hover
+{
+	 -fx-background-color: #28e0dd;
+    -fx-cursor: hand;
+}
+.search
+{
+	 -fx-background-color:  black;
+  
+}
+
+.udate-screen{
+    -fx-background-color: rgba(0, 0, 0, 0.2);
+    -fx-background-radius: 10;
+   
+}
+
+.image-hover-container:hover {
+    -fx-opacity: 0.7; /* Adjust opacity for overlay image */
+    -fx-effect: GaussianBlur(5);
+    -fx-background-color: rgba(0, 0, 0, 0.9); /* Apply blur effect */
+}
+
+
+.image-hover-container {
+    -fx-alignment: center;
+}
+
+.profile:hover
+{
+	 -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.9), 15, 0, 0, 0);
+	 -fx-background-color: #018ABE;
+    -fx-cursor: hand;
+}
+.profile
+{
+	 -fx-background-color:  rgba(0, 0, 0, 0.5);
+  
+}
+

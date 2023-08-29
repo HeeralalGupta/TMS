@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER" prefHeight="550.0" prefWidth="867.0" style="-fx-background-color: #F6F3EE;" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.updateTaskController">
+   <children>
+      <Pane prefHeight="550.0" prefWidth="871.0">
+         <children>
+            <TextField fx:id="taskName" layoutX="80.0" layoutY="87.0" prefHeight="40.0" prefWidth="320.0" promptText="Enter Task Name" style="-fx-border-color: #47bc99; -fx-border-width: 2; -fx-background-radius: 10; -fx-border-radius: 10;">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="104.0" layoutY="78.0" prefHeight="17.0" prefWidth="113.0" style="-fx-background-color: #47bc99; -fx-background-radius: 5; -fx-border-color: #47bc99; -fx-border-width: 0.0px 2px 0.0px 2px; -fx-border-radius: 5;" text="Task Name" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="owner" layoutX="460.0" layoutY="235.0" prefHeight="40.0" prefWidth="320.0" style="-fx-border-color: #47bc99; -fx-border-width: 2; -fx-background-radius: 10; -fx-border-radius: 10;">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <Label alignment="CENTER" layoutX="486.0" layoutY="226.0" prefHeight="17.0" prefWidth="113.0" style="-fx-background-color: #47bc99; -fx-background-radius: 5; -fx-border-color: #47bc99; -fx-border-width: 0.0px 2px 0.0px 2px; -fx-border-radius: 5;" text="Owner" textFill="#fffafa" />
+            <TextArea fx:id="description" layoutX="466.0" layoutY="378.0" prefHeight="153.0" prefWidth="376.0" style="-fx-border-color: #47bc99;" />
+            <Button layoutX="142.0" layoutY="452.0" mnemonicParsing="false" onAction="#save" prefHeight="40.0" prefWidth="200.0" style="-fx-background-radius: 10;" styleClass="save" text="Update">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect></Button>
+            <Label alignment="CENTER" layoutX="486.0" layoutY="368.0" prefHeight="17.0" prefWidth="113.0" style="-fx-background-color: #47bc99; -fx-background-radius: 5; -fx-border-color: #47bc99; -fx-border-width: 0.0px 2px 0.0px 2px; -fx-border-radius: 5;" text="Description" textFill="#fffafa">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Pane layoutX="22.0" layoutY="63.0" prefHeight="460.0" prefWidth="9.0" style="-fx-background-color: #05d1c4;" />
+            <Pane layoutX="22.0" layoutY="521.0" prefHeight="9.0" prefWidth="430.0" style="-fx-background-color: #05d1c4;" />
+            <Pane layoutX="22.0" layoutY="59.0" prefHeight="9.0" prefWidth="813.0" style="-fx-background-color: #05d1c4;" />
+            <Pane layoutX="831.0" layoutY="59.0" prefHeight="310.0" prefWidth="9.0" style="-fx-background-color: #05d1c4;" />
+            <DatePicker fx:id="assignDate" layoutX="82.0" layoutY="160.0" prefHeight="40.0" prefWidth="320.0" promptText="Enter Assigned Date" style="-fx-border-color: #05d1c4; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-width: 2;">
+               <effect>
+                 <DropShadow />
+               </effect>
+            </DatePicker>
+            <DatePicker fx:id="estimatDate" layoutX="82.0" layoutY="235.0" prefHeight="40.0" prefWidth="320.0" promptText="Enter Estimated Date" style="-fx-border-color: #05d1c4; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-width: 2;">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </DatePicker>
+            <Label alignment="CENTER" layoutX="106.0" layoutY="226.0" prefHeight="17.0" prefWidth="113.0" style="-fx-background-color: #47bc99; -fx-background-radius: 5; -fx-border-color: #47bc99; -fx-border-width: 0.0px 2px 0.0px 2px; -fx-border-radius: 5;" text="Estimated Date" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="106.0" layoutY="152.0" prefHeight="17.0" prefWidth="113.0" style="-fx-background-color: #47bc99; -fx-background-radius: 5; -fx-border-color: #47bc99; -fx-border-width: 0.0px 2px 0.0px 2px; -fx-border-radius: 5;" text="Assigned Date" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="priority" editable="true" layoutX="81.0" layoutY="307.0" prefHeight="40.0" prefWidth="320.0" promptText="Select Priority" style="-fx-border-color: #05d1c4; -fx-border-radius: 10; -fx-border-width: 2; -fx-background-radius: 10;">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ComboBox>
+            <ComboBox fx:id="status" editable="true" layoutX="82.0" layoutY="377.0" prefHeight="40.0" prefWidth="320.0" promptText="Select Status" style="-fx-border-color: #05d1c4; -fx-border-radius: 10; -fx-border-width: 2; -fx-background-radius: 10;">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ComboBox>
+            <Label alignment="CENTER" layoutX="106.0" layoutY="370.0" prefHeight="17.0" prefWidth="113.0" style="-fx-background-color: #47bc99; -fx-background-radius: 5; -fx-border-color: #47bc99; -fx-border-width: 0.0px 2px 0.0px 2px; -fx-border-radius: 5;" text="Status" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="106.0" layoutY="300.0" prefHeight="17.0" prefWidth="113.0" style="-fx-background-color: #47bc99; -fx-background-radius: 5; -fx-border-color: #47bc99; -fx-border-width: 0.0px 2px 0.0px 2px; -fx-border-radius: 5;" text="Priority" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="currentOwner" editable="true" layoutX="462.0" layoutY="308.0" prefHeight="40.0" prefWidth="320.0" promptText="Select Current Owner" style="-fx-border-color: #05d1c4; -fx-border-radius: 10; -fx-border-width: 2; -fx-background-radius: 10;">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ComboBox>
+            <ComboBox fx:id="assignTo" editable="true" layoutX="461.0" layoutY="87.0" prefHeight="40.0" prefWidth="320.0" promptText="Select Assigned Name" style="-fx-border-color: #05d1c4; -fx-border-radius: 10; -fx-border-width: 2; -fx-background-radius: 10;">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ComboBox>
+            <Label alignment="CENTER" layoutX="486.0" layoutY="300.0" prefHeight="17.0" prefWidth="113.0" style="-fx-background-color: #47bc99; -fx-background-radius: 5; -fx-border-color: #47bc99; -fx-border-width: 0.0px 2px 0.0px 2px; -fx-border-radius: 5;" text="Current Owner" textFill="#fffafa" />
+            <Label alignment="CENTER" layoutX="488.0" layoutY="79.0" prefHeight="17.0" prefWidth="113.0" style="-fx-background-color: #47bc99; -fx-background-radius: 5; -fx-border-color: #47bc99; -fx-border-width: 0.0px 2px 0.0px 2px; -fx-border-radius: 5;" text="Assigned To" textFill="#fffafa" />
+            <Label alignment="CENTER" layoutX="22.0" layoutY="37.0" prefHeight="31.0" prefWidth="209.0" style="-fx-text-fill: WHITE; -fx-background-color: #05d1c4; -fx-border-radius: 10; -fx-border-color: #05d1c4; -fx-border-width: 2; -fx-background-radius: 10;" text="UPDATE TASK">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="assignId" alignment="CENTER" layoutX="462.0" layoutY="162.0" onMouseClicked="#empId" prefHeight="40.0" prefWidth="320.0" style="-fx-background-color: lightgrey; -fx-background-radius: 10; -fx-border-color: #47bc99; -fx-border-width: 2; -fx-border-radius: 10;" styleClass="save" text="Click here fetch employee id">
+               <effect>
+                  <DropShadow />
+               </effect></Label>
+            <Label alignment="CENTER" layoutX="489.0" layoutY="153.0" prefHeight="17.0" prefWidth="113.0" style="-fx-background-color: #47bc99; -fx-background-radius: 5; -fx-border-color: #47bc99; -fx-border-width: 0.0px 2px 0.0px 2px; -fx-border-radius: 5;" text="Assigned Id" textFill="#fffafa" />
+         </children>
+      </Pane>
+   </children>
+</HBox>

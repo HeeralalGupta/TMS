@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="455.0" prefWidth="600.0" style="-fx-background-color: #00A8AA;" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.UpdateEmpController">
+   <children>
+      <Pane layoutX="26.0" layoutY="18.0" prefHeight="433.0" prefWidth="500.0" styleClass="udate-screen" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="36.0">
+         <children>
+            <TextField fx:id="nameField" layoutX="100.0" layoutY="47.0" prefHeight="35.0" prefWidth="300.0" promptText="Enter your name">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <TextField fx:id="emailField" layoutX="100.0" layoutY="191.0" prefHeight="35.0" prefWidth="300.0" promptText="Enter your email">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <TextField fx:id="designationField" layoutX="100.0" layoutY="119.0" prefHeight="35.0" prefWidth="300.0" promptText="Enter your designation">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <TextField fx:id="mobileField" layoutX="100.0" layoutY="264.0" prefHeight="35.0" prefWidth="300.0" promptText="Enter your mobile">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <Label layoutX="102.0" layoutY="16.0" text="Name :" textFill="#f8f4f4">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="102.0" layoutY="161.0" text="Email :" textFill="#f8f4f4">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="102.0" layoutY="89.0" text="Designation :" textFill="#f8f4f4">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="102.0" layoutY="234.0" text="Mobile :" textFill="#f8f4f4">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button layoutX="166.0" layoutY="334.0" mnemonicParsing="false" onAction="#saveEmp" prefHeight="30.0" prefWidth="168.0" style="-fx-background-radius: 10; -fx-border-radius: 10;" styleClass="save" text="Save">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children></Pane>
+      <Label layoutX="60.0" layoutY="15.0" prefHeight="17.0" prefWidth="152.0" text="ADD EMPLOYEE" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+   <effect>
+      <DropShadow height="29.9" radius="14.45" width="29.9" />
+   </effect>
+</AnchorPane>

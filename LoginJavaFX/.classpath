@@ -6,23 +6,31 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17">
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17">
 		<attributes>
 			<attribute name="module" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.fx.ide.jdt.core.JAVAFX_CONTAINER">
+	<classpathentry exported="true" kind="con" path="org.eclipse.fx.ide.jdt.core.JAVAFX_CONTAINER">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="F:/Java PanditSoft/JDBC Driver/postgresql-42.6.0.jar"/>
-	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+	<classpathentry exported="true" kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/Heera/Downloads/charm-glisten-4.4.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="F:/javafx/javafx-sdk-17.0.8/lib/javafx.base.jar"/>
+	<classpathentry exported="true" kind="lib" path="F:/javafx/javafx-sdk-17.0.8/lib/javafx.controls.jar"/>
+	<classpathentry exported="true" kind="lib" path="F:/javafx/javafx-sdk-17.0.8/lib/javafx.fxml.jar"/>
+	<classpathentry exported="true" kind="lib" path="F:/javafx/javafx-sdk-17.0.8/lib/javafx.graphics.jar"/>
+	<classpathentry exported="true" kind="lib" path="F:/javafx/javafx-sdk-17.0.8/lib/javafx.media.jar"/>
+	<classpathentry exported="true" kind="lib" path="F:/javafx/javafx-sdk-17.0.8/lib/javafx.swing.jar"/>
+	<classpathentry exported="true" kind="lib" path="F:/javafx/javafx-sdk-17.0.8/lib/javafx.web.jar"/>
+	<classpathentry exported="true" kind="lib" path="F:/javafx/javafx-sdk-17.0.8/lib/javafx-swt.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/RUCHI WORK/my learn folder/PRAC/mysql-connector-j-8.1.0/mysql-connector-j-8.1.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/RUCHI WORK/my learn folder/PRAC/org.eclipse.fx.ide.css.jfx8_3.5.0.201907240300.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
